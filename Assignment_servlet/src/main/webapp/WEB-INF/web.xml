@@ -1,0 +1,47 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+  <servlet>
+  	<servlet-name>FindBook</servlet-name>
+
+  	<description></description>
+  	<servlet-class>com.capg.controllers.FindBook</servlet-class>
+  </servlet>
+  
+  <servlet>
+  	<servlet-name>AddBook</servlet-name>
+  	<servlet-class>com.capg.controllers.AddBook</servlet-class>
+  </servlet>
+  
+  <servlet>
+  	<servlet-name>updateBook</servlet-name>
+  	<servlet-class>com.capg.controllers.updateBook</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>DeleteBook</servlet-name>
+  	<servlet-class>com.capg.controllers.DeleteBook</servlet-class>
+  </servlet>
+  
+  
+  
+  <servlet-mapping>
+  	<servlet-name>FindBook</servlet-name>
+  	<url-pattern>/get</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+  	<servlet-name>AddBook</servlet-name>
+  	<url-pattern>/add</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>updateBook</servlet-name>
+  	<url-pattern>/update</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>DeleteBook</servlet-name>
+  	<url-pattern>/delete</url-pattern>
+  </servlet-mapping>
+</web-app>
